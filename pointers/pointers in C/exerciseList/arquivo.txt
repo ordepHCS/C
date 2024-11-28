@@ -1,0 +1,2 @@
+- lista de ponteiros em C da UFU/FACOM :D
+- 1/26 questões.

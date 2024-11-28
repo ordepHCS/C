@@ -1,0 +1,10 @@
+Nome: Pedro
+Idade: 19
+Cargo: TI
+Salario: 2300.00
+
+Nome: Aninha
+Idade: 19
+Cargo: TI
+Salario: 3459.00
+
