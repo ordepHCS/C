@@ -2,11 +2,13 @@
 indicando claramente quais elementos foram trocados ou
 sobrescritos em cada passo.*/
 
-/* com o array fornecido o algoritmo e (O(n²)) por conta do array estar desordenado
-se estivesse ordenado seria (O(n)) :>*/
-
-// tentei escrever de uma forma que usasse menos memoria
-// optei por ponteiros
+/* BubbleSort funciona comparando pares de elementos consecutivos e os troca de posicao
+* se estiverem fora de ordem
+*
+* esse processo e repetido ate que o array esteja ordenado
+*
+* no melhor caso (array 100% ordenado) o algoritmo e (O(n))
+* no pior caso quando array nao esta ordenado o algoritmo e (O(n²))*/
 
 #include <stdio.h>
 
