@@ -3,12 +3,17 @@ indicando claramente quais elementos foram trocados ou
 sobrescritos em cada passo.*/
 
 /* BubbleSort funciona comparando pares de elementos consecutivos e os troca de posicao
-* se estiverem fora de ordem
+* se estiverem fora de ordem esse processo e repetido ate que o array esteja ordenado
 *
-* esse processo e repetido ate que o array esteja ordenado
 *
-* no melhor caso (array 100% ordenado) o algoritmo e (O(n))
-* no pior caso quando array nao esta ordenado o algoritmo e (O(n²))*/
+* o algoritmo escrito esta em O(n²) tanto no melhor caso quanto no pior caso
+* 
+* usei ponteiros para a manipulacao */
+
+/*links de onde tirei todas as informações: 
+* 1 - https://stackoverflow.com/questions/21508381/bubble-sort-in-c
+* 2 - https://youtu.be/xw9DxhxP5S4?si=FC5OIoLW7u2sWyh_
+* 3 - slide das aulas que estao no portal fametro*/
 
 #include <stdio.h>
 
@@ -26,7 +31,7 @@ void bubbleSort(int *array, int n) {
                 for(int k = 0; k < n; k++) { 
                     printf("%d ", *(array + k));
                 }
-                printf("\n----------------\n");
+                printf("\n==================\n");
             }
         }
     }
