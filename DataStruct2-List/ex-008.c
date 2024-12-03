@@ -2,7 +2,7 @@
 Exemplo: (1, 2, 3, 3, 4, 5, 5, 5, 6, 6) → (1, 2, 3, 4, 5, 6). */
 
 // escolhi usar uma simples e linda linked list :D
-// o algoritmo esta em O(n) porque o algoritmo percorre todos os N nós da linked list uma so vez
+// o algoritmo esta em O(n) neste exemplo! porque o algoritmo percorre todos os N nós da linked list uma so vez
 
 // agora que eu terminei de documentar o codigo eu percebi que misturei o codigo com plavras em ingles e portugues :p
 
