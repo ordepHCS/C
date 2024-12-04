@@ -1,15 +1,17 @@
-/* 14 - (ENADE 2023 - Adaptada) Suponha que uma empresa de transportes deseje calcular uma rota de Manaus para 
-São Paulo utilizando a estratégia da busca gulosa, técnica de busca local que seleciona a melhor alternativa disponível a cada passo. 
-Observe, a seguir, um grafo de conexão de cidades até o destino e o quadro com estimativas de distância de São Paulo até as demais cidades do grafo. 
+/* 14 - As tabelas de hash são fundamentais em computação devido à sua eficiência em operações de inserção, busca e deleção. 
+Você está desenvolvendo um sistema de gerenciamento de usuários que requer acesso rápido às informações de cada usuário por meio de um identificador único 
+como um nome de usuário ou ID. 
 
-Com base nessas informações, qual será a solução encontrada a partir da utilização do algoritmo? Orientação: 
-pesquise sobre busca gulosa  (greedy Search) em grafos. */
+Explique como uma tabela de hash funciona, destacando o papel da função hash na determinação da posição de armazenamento dos dados. 
 
-/* bom essa questao foi respondida em sala e a resposta e
-    manaus->cuaiaba->goiania->palmas*/
+R =
 
-/* mas sobre minha pesquisa sobre greedy search aprendi que e um algoritmo de busca local que escolhe a melhor alternativa
-disponivel com base em uma "heurística" que estima a proximidade do objetivo no exemplo da img um grafo de cidades onde a
-"heurística" e a distancia ate o destino*/
+Descreva o que são colisões em tabelas de hash e porque elas ocorrem. 
 
-// usei o chatgpt para pesquisar para ter uma resposta mais direta 
+R =
+
+Apresente pelo menos dois métodos para resolver colisões em tabelas de hash, explicando as vantagens e desvantagens de cada um. 
+
+R = 
+
+*/
