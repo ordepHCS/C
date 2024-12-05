@@ -12,7 +12,11 @@ A - As asserções I e II são proposições verdadeiras, e a II é um exemplo c
 
 B - As asserções I e II são proposições verdadeiras, mas a II não é um exemplo correto da I. 
 
-C - A asserção I é uma proposição verdadeira, mas a II é uma proposição falsa. 
+C - A asserção I é uma proposição verdadeira, mas a II é uma proposição falsa.
 
-  R = A.
+D - A asserção I é uma proposição falsa e a II é uma proposição verdadeira. 
+
+E - As asserções I e II são proposições falsas. 
+
+   R = A.
 */
