@@ -7,7 +7,7 @@ Quick sort = melhor = O(n log n) - pior = O(n^2)
 Selection sort = melhor = O(n^2) - pior = O(n^2)
 Heap sort = melhor = O(n log n) - pior = O(n log n)
 
-para essa questao foi usado = chatgpt e esses video:
+para essa questao foi usado = chatgpt, o livro "Entendendo Algoritmos" e esses video:
 https://youtu.be/k2XkYEUH9nA?si=7nfVZCVnTbRQ6EDc
 https://youtu.be/tR6S4dz6UGA?si=QBFUehB7uZaHOiPW
 
