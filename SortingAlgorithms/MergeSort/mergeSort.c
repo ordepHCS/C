@@ -9,16 +9,16 @@ void merge(int *array, int left, int mid, int right) {
     int *L = (int *)malloc(n1 * sizeof(int));
     int *R = (int *)malloc(n2 * sizeof(int));
 
-    for (i = 0; i < n1; i++)
+    for(i = 0; i < n1; i++)
         L[i] = array[left + i];
-    for (j = 0; j < n2; j++)
+    for(j = 0; j < n2; j++)
         R[j] = array[mid + 1 + j];
 
     i = 0;
     j = 0;
     k = left;
     
-    while (i < n1 && j < n2) {
+    while(i < n1 && j < n2) {
         if (L[i] <= R[j]) {
             array[k] = L[i];
             i++;
@@ -29,13 +29,13 @@ void merge(int *array, int left, int mid, int right) {
         k++;
     }
 
-    while (i < n1) {
+    while(i < n1) {
         array[k] = L[i];
         i++;
         k++;
     }
 
-    while (j < n2) {
+    while(j < n2) {
         array[k] = R[j];
         j++;
         k++;
@@ -60,7 +60,7 @@ void printArray(int *array, int size) {
         printf("%d ", array[i]);
 }
 
-int main() {
+int main(main) {
     int array[] = {12, 11, 13, 5, 6, 7};
     int n = 6;
 
