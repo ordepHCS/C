@@ -60,7 +60,7 @@ void printArray(int *array, int size) {
         printf("%d ", array[i]);
 }
 
-int main(main) {
+int main(void) {
     int array[] = {12, 11, 13, 5, 6, 7};
     int n = 6;
 

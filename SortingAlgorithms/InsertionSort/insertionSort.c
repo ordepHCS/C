@@ -23,9 +23,6 @@ int main(void) {
     int array[] = {12, 11, 13, 5, 6};
     int n = 5;
 
-    printf("Array original: \n");
-    printArray(array, n);
-
     insertionSort(array, n);
     printArray(array, n);
     
