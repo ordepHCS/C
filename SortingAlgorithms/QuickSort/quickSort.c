@@ -1,46 +1,66 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void troca(int *array, int *n) {
-    int auxVar = *array;
-    *array = *n;
-    *n = auxVar;
+void swap(int* a, int* b) {
+    int auxVar = *a;
+    *a = *b;
+    *b = auxVar;
 }
 
-int particiona(int array[], int low, int high) {
-    int pivot = array[high];
-    int i = (low - 1);
+int *partition(int* low, int* high) {
+    int pivot = *high;
+    int* i = low - 1;
 
-    for(int j = low; j <= high - 1; j++) {
-        if (array[j] < pivot) {
+    for(int* j = low; j < high; j++) {
+        if(*j < pivot) {
             i++;
-            troca(&array[i], &array[j]);
+            swap(i, j);
         }
     }
-    troca(&array[i + 1], &array[high]);
-    return (i + 1);
+    swap(i + 1, high);
+    return i + 1;
 }
 
-void quickSort(int array[], int low, int high) {
-    if(low < high) {
-        int pi = particiona(array, low, high);
+void quickSort(int* array, int size) {
+    int** stack = (int**)malloc(2 * size * sizeof(int*));
+    if(!stack) {
+        printf("error\n");
+        return;
+    }
+    int top = -1;
 
-        quickSort(array, low, pi - 1);
-        quickSort(array, pi + 1, high);
+    stack[++top] = array;
+    stack[++top] = array + size - 1;
+
+    while(top >= 0) {
+        int* high = stack[top--];
+        int* low = stack[top--];
+
+        int* pivot = partition(low, high);
+
+        if(pivot - 1 > low) {
+            stack[++top] = low;
+            stack[++top] = pivot - 1;
+        }
+        if(pivot + 1 < high) {
+            stack[++top] = pivot + 1;
+            stack[++top] = high;
+        }
     }
 }
 
-void imprimeArray(int array[], int n) {
-    for(int i = 0; i < n; i++) {
+void printArray(int* array, int size) {
+    for(int i = 0; i < size; i++) {
         printf("%d ", array[i]);
     }
 }
 
 int main(void) {
-    int array[] = {10, 7, 8, 9, 1, 5};
+    int array[] = {45,89,43,11,90,1};
     int n = 6;
 
-    quickSort(array, 0, n - 1);
-    imprimeArray(array, n);
-    
+    quickSort(array, n);
+    printArray(array, n);
+
     return 0;
 }
